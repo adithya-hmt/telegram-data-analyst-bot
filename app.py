@@ -100,7 +100,7 @@ async def publish_log(run_id: str, record: dict[str, Any]) -> str:
     return f"{PUBLIC_BASE_URL}/runs/{run_id}.jsonl"
 
 
-@app.get("/healthz")
+@app.get("/status")
 async def healthz() -> dict[str, str]:
     return {"status": "ok"}
 

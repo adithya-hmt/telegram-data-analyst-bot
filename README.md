@@ -6,6 +6,8 @@ An LLM-powered Telegram webhook that answers data-analysis questions with exactl
 {"answer": {"state": "Assam"}, "log_url": "https://host/runs/<id>.jsonl"}
 ```
 
+Health endpoint: `/status`.
+
 The agent uses Gemini with Google Search grounding and Python code execution, keeps a short per-chat conversation history, and writes each run as public JSONL in `LOG_BUCKET`.
 
 ## Configuration
